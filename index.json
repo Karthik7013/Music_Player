@@ -1,0 +1,146 @@
+[
+    {
+        "lang": "telugu",
+        "track": "tracks/Jai_Shri_Ram.mp3",
+        "year": 2023,
+        "title": "Jai Shri Ram",
+        "album_img": "images/Adipurush.jpg",
+        "movie_name": "Adhipurush"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/Toofan.mp3",
+        "year": 2023,
+        "title": "Toofan",
+        "album_img": "images/kgf2.jpg",
+        "movie_name": "KGF-2"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/Ram_Sita_Ram.mp3",
+        "year": 2023,
+        "title": "Ram Sita Ram",
+        "album_img": "images/Adipurush.jpg",
+        "movie_name": "Adhipurush"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/[iSongs.info]_01_-_Boss_Party.mp3",
+        "year": 2023,
+        "title": "Boss Party",
+        "album_img": "images/waltair_verraya.jpg",
+        "movie_name": "Waltair Verraya"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/[iSongs.info]_05_-_Naatu_Naatu.mp3",
+        "year": 2023,
+        "title": "Naatu Naatu",
+        "album_img": "images/rrr.jpg",
+        "movie_name": "RRR"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/Celebration_of_Vennela.mp3",
+        "year": 2023,
+        "title": "Celebration of Vennela",
+        "album_img": "images/Dasara.jpg",
+        "movie_name": "Darsara"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/[iSongs.info]_07_-_Idhe_Kadha_Nee_Katha.mp3",
+        "year": 2023,
+        "title": "Idhe Kadha Nee Katha",
+        "album_img": "images/maharshi.jpg",
+        "movie_name": "Maharshi"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/3-Chamkeela_Angeelesi.mp3",
+        "year": 2023,
+        "title": "Chamkeela_Angeelesi",
+        "album_img": "images/Dasara.jpg",
+        "movie_name": "Darsara"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/Ranjithame.mp3",
+        "year": 2023,
+        "title": "Ranjithame",
+        "album_img": "images/varasadu.jpg",
+        "movie_name": "Varasadu"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/Ori_Vaari.mp3",
+        "year": 2023,
+        "title": "Ori_Vaari",
+        "album_img": "images/Dasara.jpg",
+        "movie_name": "Darsara"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/Mastaaru_Mastaaru.mp3",
+        "year": 2023,
+        "title": "Mastaaru Mastaaru",
+        "album_img": "images/sir.jpg",
+        "movie_name": "Sir"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/The_Monster_Song.mp3",
+        "year": 2023,
+        "title": "The Monster Song",
+        "album_img": "images/kgf2.jpg",
+        "movie_name": "KGF-2"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/Mathuga_Mathuga.mp3",
+        "year": 2023,
+        "title": "Mathuga Mathuga",
+        "album_img": "images/vikram.jpg",
+        "movie_name": "Vikram"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/Nachavule_Nachavule.mp3",
+        "year": 2023,
+        "title": "Nachavule_Nachavule",
+        "album_img": "images/verupaksha.jpg",
+        "movie_name": "Verupaksha"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/Oh_Sita_Hey_Rama.mp3",
+        "year": 2023,
+        "title": "Oh Sita Hey Rama",
+        "album_img": "images/sitaRamam.jpg",
+        "movie_name": "Sita Ramam"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/Sulthana.mp3",
+        "year": 2023,
+        "title": "Sulthana",
+        "album_img": "images/kgf2.jpg",
+        "movie_name": "KGF-2"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/Naa_Manasukemayindi.mp3",
+        "year": 2006,
+        "title": "Naa Manasukemayindi",
+        "album_img": "images/Naa_Manasukemayindi.jpg",
+        "movie_name": "Nuvve Nuvve"
+    },
+    {
+        "lang": "telugu",
+        "track": "tracks/Dhoom_Dhaam_Dhosthaan.mp3",
+        "year": 2023,
+        "title": "Dhoom Dhaam Dhosthaan",
+        "album_img": "images/Dasara.jpg",
+        "movie_name": "Darsara"
+    }
+]

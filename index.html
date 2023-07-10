@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="music-player-body-wraper">
+            <div class="music-player-header">
+                <div class="head-left">
+                    <div class="close"><i class="fa-solid fa-chevron-left"></i></div>
+                    <p>Now Playing</p>
+                </div>
+                <div class="head-right">
+                    <div class="more">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="music-player-body">
+                <div class="img-container"><img id="song-img"
+                        src="./images/ab67706f0000000204a6fcea8e2aef16c818dec4.jpg" alt="">
+                </div>
+                <div class="song-details-container">
+                    <div class="song-title">
+                        <p id="song-title">...mp3</p>
+                    </div>
+                    <div class="song-details">
+                        <div class="left"></div>
+                        <div class="right"></div>
+
+                    </div>
+                </div>
+                <div class="song-progress-bar">
+                    <div class="progress-section">
+                        <span>00:00</span>
+                        <div class="progress"><input type="range"></div><span>00:00</span>
+                    </div>
+                    <div class="controls">
+                        <div class="shuffle"><i class="fa-solid fa-shuffle"></i></div>
+                        <div id="prev_btn" class="pre"><i class="fa-solid fa-backward-step"></i></div>
+                        <div id="play_pause_btn" class="play"><i class="fa-solid fa-play"></i></div>
+                        <div id="next_btn" class="next"><i class="fa-solid fa-forward-step"></i></div>
+                        <div class="loop"><i class="fa-solid fa-person-walking-arrow-loop-left"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="music-player-controls" style="">
+                <div class="details-head">
+                    <h4>Lyrics</h4>
+                    <div class="details-close"><i class="fa-solid fa-chevron-up"></i></div>
+                </div>
+                <div class="details-body">
+                    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque praesentium minus
+                        suscipit
+                        error fugit tenetur dignissimos id temporibus consequatur iusto ipsam, velit voluptas
+                        doloribus
+                        quae quod, saepe dolorem, quasi sunt voluptates explicabo. Expedita, ratione eos soluta
+                        animi
+                        voluptates, dolorum veritatis iure accusamus sunt distinctio odit nemo quos qui doloremque
+                        iusto
+                        magni vero corporis doloribus, tempora porro in tenetur dolore maxime. Quis reprehenderit
+                        consectetur soluta ratione id minus nulla fugit laudantium!</h1>
+                </div>
+            </div>
+        </div>
+        <div class="main-player">
+            <div class="header-wraper">
+                <div class="header">
+                    <div class="logo" style="display: flex;align-items: center;gap: 7px;margin-left: 10px;">
+                        <i class="fa-brands fa-spotify" style="font-size: 2em;"></i>
+                        <h3 style="font-family: 'Dancing Script', cursive;font-style: normal;font-weight: 900px;"><span
+                                style="font-size: 1.7em;font-family: 'Dancing Script', cursive;">S</span>potify</h3>
+                    </div>
+                    <div class="open">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="player-body-wraper">
+                <div class="player-body">
+
+                </div>
+            </div>
+            <div class="mini-player-wraper">
+                <div class="mini-player">
+                    <div class="min-left">
+                        <img src="" id="mini-img" alt="">
+                        <div class="min-song-name">
+                            <p id="song-title-mini" style="color: rgb(227, 227, 227);">Bad Boy</p>
+                            <p id="movie-name-mini" style="color: rgb(128, 128, 128);">Artist</p>
+                        </div>
+                    </div>
+                    <div class="min-right">
+                        <div class=" play play_btn" id="play_btn_mini">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./ui.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

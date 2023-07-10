@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Dancing+Script:wght@600;700&family=Pacifico&family=Poppins:wght@600&family=Quicksand&display=swap');
+
+/* font-family: 'Belanosima', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    min-width: 300px;
+}
+
+.log {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(38, 38, 38);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-wraper {
+    /* min-height: 60px;
+    max-height: fit-content; */
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    display: flex;
+    padding-bottom: 0;
+    flex-direction: column;
+    height: auto;
+}
+
+.header {
+    color: rgb(238, 255, 181);
+    width: 100%;
+    max-height: 60px;
+    background-color: #171717;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    font-family: 'Belanosima', sans-serif;
+    font-style: italic;
+
+}
+
+.open {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #64ff6a;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(150, 150, 150, 0.199);
+    /* animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s; */
+    cursor: pointer;
+}
+
+.player-body-wraper {
+    flex: auto;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.player-body {
+    width: 100%;
+    flex: 1;
+    border-radius: 6px;
+    overflow-y: scroll;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgb(19, 19, 19);
+}
+
+.card {
+    cursor: pointer;
+    min-width: 100px;
+    max-width: 170px;
+    min-height: 160px;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* background-color : rgb(19, 19, 19); */
+    background-color: rgb(31, 31, 31);
+    box-shadow: 3px 3px 3px rgb(1, 1, 1);
+}
+
+.img {
+    padding: 8px;
+    padding-bottom: 0;
+    flex: auto;
+
+}
+
+.card-body {
+
+    width: 100%;
+    /* height: 60px; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: auto;
+    padding: 10px;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.card-body p {
+    width: 100%;
+}
+
+.card-body p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.music-player-body-wraper {
+    color: white;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: column;
+    bottom: -100vh;
+    left: 0;
+    transition: all .2s linear;
+    z-index: 9999;
+}
+
+.active {
+    bottom: 0px;
+    transition: all .2s linear;
+}
+
+/* music player styles */
+
+.music-player-header {
+    color: blanchedalmond;
+    font-family: 'Pacifico', cursive;
+    min-height: 60px;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.music-player-header .head-left {
+    display: flex;
+    align-items: center;
+}
+
+.music-player-header .head-right {
+    display: flex;
+}
+
+.music-player-header p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.4em;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(45, 45, 45, 0.454);
+    height: 40px;
+    font-size: 1.8em;
+}
+
+.music-player-body {
+    flex: auto;
+    border-radius: 7px;
+    background-color: rgb(31, 31, 31);
+    /* background: linear-gradient(65deg, rgb(255, 50, 84), rgba(96, 255, 223, 0.518)); */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 10px;
+    gap: 10px;
+}
+
+.music-player-controls {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: nowrap;
+    padding: 10px;
+    transition: all .2s linear;
+    overflow: hidden;
+}
+
+.close {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(65, 65, 65, 0);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: white;
+
+}
+
+.show-details {
+    height: 450px;
+}
+
+.details-head {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.details-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    border-radius: 50%;
+    transition: all .3s linear;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: all .3s linear;
+}
+
+.details-body {
+    flex: 1;
+    background-color: rgb(143, 255, 199);
+    border-radius: 7px;
+    overflow: scroll;
+    color: rgb(31, 31, 31);
+    padding: 5px;
+}
+
+.img-container {
+    flex: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all .1s linear;
+}
+
+.img-container img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+.song-details-container {
+    height: 60px;
+    /* background-color: blueviolet; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.song-title {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.song-details-container p {
+    font-size: 1.5em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.song-details {
+    display: flex;
+    gap: 10px;
+}
+
+.song-progress-bar {
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgb(23, 23, 23);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 10px;
+
+}
+
+.controls {
+    margin-top: 20px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.controls .pre,
+.play,
+.next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(65, 65, 65);
+    box-shadow: 2px 3px 2px black;
+
+}
+
+.shuffle,
+.loop {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    align-items: center;
+    background-color: rgb(65, 65, 65);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.play {
+    font-size: 2.3em;
+    width: 70px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.play i {
+    margin-left: 4px;
+}
+
+.pre,
+.next {
+    font-size: 1.8em;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+/* progress section */
+.progress-section {
+    height: 40px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.start,
+.end {
+    width: fit-content;
+    height: inherit;
+    background-color: yellow;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    min-width: 160px;
+}
+
+
+/* The slider itself */
+input {
+    border-radius: 6px;
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 6px;
+    /* Specified height */
+    background: #d6d6d6;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+
+}
+
+/* Mouse-over effects */
+input:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 16px;
+    border-radius: 50%;
+    /* Set a specific slider handle width */
+    height: 16px;
+    /* Slider handle height */
+    background: #64ff6a;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* mini player */
+
+
+.mini-player-wraper {
+    max-height: 70px;
+    min-height: 70px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 0px 10px;
+    padding-bottom: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.mini-player {
+    width: 100%;
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+}
+
+.min-left {
+    flex: auto;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+
+.min-left img {
+    width: 60px;
+    height: 60px;
+}
+
+.min-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    /* flex: ; */
+    /* background-color: #de2c2c; */
+}
+
+.min-song-name {
+    flex: auto;
+    padding-left: 16px;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.min-song-name p {
+    width: fit-content;
+}
+
+.play_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    color: white;
+    width: 45px;
+    height: 45px;
+}
+
+.mr1 {
+    padding-right: 4px;
+    color: #64ff6a;
+}
+
+.mr {
+    padding-right: 4px;
+    padding-top: 2px;
+    color: #64ff6a;
+}
+
+
+
+
+
+
+/* ------------------ */
+
+.main-player {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* ------------------ */
+
+
+@media screen and (min-width: 768px) {
+    .card {
+        margin: 10px;
+    }
+}
